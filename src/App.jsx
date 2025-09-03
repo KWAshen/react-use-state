@@ -39,7 +39,10 @@ return(
     {languages.map(language => {
       return (
         <div className="col-12">
-          <button className="btn btn-primary me-2">{language.title}</button>
+          <button className="btn btn-primary me-2"
+          onClick={() => setlangnguage (language)}
+          key={language.id}
+          >{language.title}</button>
         </div>
       )
     })}
