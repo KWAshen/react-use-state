@@ -1,3 +1,4 @@
+import {usestate} from "react";
 const languages = [
   {
     id: 1,
@@ -30,6 +31,26 @@ const languages = [
     description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
   }
 ];
-function App() {}
-return <h1>Hello World</h1>
-export default App
+function App() {
+  const [language, setlangnguage] = usestate(languages[0])
+return(
+<div className="container my-5">
+  <div className="row">
+    {languages.map(language => {
+      return (
+        <div className="col-12">
+          <button className="btn btn-primary me-2">{language.title}</button>
+        </div>
+      )
+    })}
+    <div className="col-12 mt-4">
+      <div className="card p-3">
+      <h2>Html</h2>
+      <p></p>
+      <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+    </div>
+    </div>
+  </div>
+</div>
+)}
+// export default App
