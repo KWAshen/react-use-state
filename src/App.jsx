@@ -40,7 +40,7 @@ return(
       return (
         <div className="col-12">
           <button className="btn btn-primary me-2"
-          onClick={() => setlangnguage (language)}
+          onClick={() => setlangnguage(language)}
           key={language.id}
           >{language.title}</button>
         </div>
