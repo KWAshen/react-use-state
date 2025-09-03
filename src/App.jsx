@@ -45,9 +45,9 @@ return(
     })}
     <div className="col-12 mt-4">
       <div className="card p-3">
-      <h2>Html</h2>
+      <h2>{language.title}</h2>
       <p></p>
-      <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+      <p>{language.description}</p>
     </div>
     </div>
   </div>
